@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_grid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.position {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #00f800;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+#searchbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border: solid 1px;
+  border-radius: 30px;
+  width: 492px;
+  height: 65px;
+}
+
+#searchbar_text {
+  padding-left: 5px;
+  font: 500 30px "Montserrat", sans-serif;
+  border: none;
+  height: 36px;
+  text-align: center;
+}
+
+.icon_text_header {
+  font: 500 18px "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/* Barra de Menu */
+
+.container_grid_menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.position_menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-group {
+  display: none;
+}
+
+.menu_background {
+  background-color: #0b0b0c;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+.menu a:hover {
+  background-color: #00f800;
+  color: #000000;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Topo */
+  .logo {
+    width: 162px;
+    height: 68px;
+  }
+
+  #searchbar {
+    width: 249px;
+    height: 42px;
+  }
+
+  #searchbar_text {
+    padding-left: 1px;
+    font: 500 16px "Montserrat", sans-serif;
+    height: 17px;
+    width: 160px;
+  }
+
+  .search {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cart,
+  .login {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon_text_header {
+    display: none;
+  }
+
+  /* Barra de Menu*/
+  .menu {
+    display: none;
+  }
+
+  .btn-group {
+    display: inline-block;
+  }
+
+  .dropdownToggle {
+    background-color: #00f800;
+    border: #00f800;
+  }
+
+  .btn {
+    font: 1.5rem "Montserrat", sans-serif;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 20px;
+    font: 1.3rem "Montserrat", sans-serif;
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Topo */
+  header {
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  .logo {
+    width: 100px;
+    height: 48px;
+  }
+
+  #searchbar {
+    background-color: #00f800;
+    border: none;
+    width: 20px;
+  }
+
+  #searchbar_text {
+    display: none;
+  }
+
+  .search,
+  .cart,
+  .login {
+    width: 25px;
+    height: 25px;
+  }
+
+  .icon_text_header {
+    display: none;
+  }
+
+  /* Barra de Menu*/
+  .dropdown-menu a {
+    font-size: 1rem;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,280 @@
+<!-- Banner -->
+<div id="banner" class="banner">
+  <h1 id="banner_text" class="container_grid">
+    Só na Game Mania você encontra tudo sobre games e tecnologia!
+  </h1>
+</div>
+
+<!-- Seção de Ícones -->
+<section class="icons_background">
+  <div class="container_grid position">
+    <div class="icons">
+      <img
+        class="atendimento"
+        src="./assets/imagens/icon_atendimento.svg"
+        alt="Ícone Atendimento Personalizado"
+        width="120"
+        height="100"
+        style="color: white"
+      />
+      <p class="icon_text_section">Atendimento personalizado e compra segura</p>
+    </div>
+    <img
+      src="./assets/imagens/Line 2.png"
+      alt="Imagen de linha divisória"
+      height="80"
+      style="color: white"
+    />
+    <div class="icons">
+      <img
+        class="qualidade"
+        src="./assets/imagens/icon_qualidade.svg"
+        alt="Ícone Garantia de Qualidade"
+        width="100"
+        height="104"
+        style="color: white"
+      />
+      <p class="icon_text_section">
+        Garantia de qualidade e satisfação total do cliente
+      </p>
+    </div>
+    <img
+      src="./assets/imagens/Line 2.png"
+      alt="Imagem de linha divisória"
+      height="80"
+      style="color: white"
+    />
+    <div class="icons">
+      <img
+        class="entrega"
+        src="./assets/imagens/icon_entrega.svg"
+        alt="Ícone Entrega Rápida"
+        width="120"
+        height="100"
+        style="color: white"
+      />
+      <p class="icon_text_section">
+        Entrega rápida e facilitada para todo o Brasil
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Seção de Ofertas -->
+<section class="products_background">
+  <div class="container_grid">
+    <h2>Ofertas da Semana</h2>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="media-custom">
+          <a href="#">
+            <img
+              src="./assets/imagens/oferta01.jpg"
+              alt="Combo Plastation Vr"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body">
+            <p class="ofertas_text">Combo VR <strong>R$ 2.000,00</strong></p>
+            <a href="#" class="btn_buy">Comprar</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="media-custom">
+          <a href="#">
+            <img
+              src="./assets/imagens/oferta02.jpg"
+              alt="Notebook Asus"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body">
+            <p class="ofertas_text">
+              Notebook Asus <strong>R$ 3.000,00</strong>
+            </p>
+            <a href="#" class="btn_buy">Comprar</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="media-custom">
+          <a href="#">
+            <img
+              src="./assets/imagens/oferta03.jpg"
+              alt="Headset Gamer"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body">
+            <p class="ofertas_text">Headset Gamer <strong>R$ 99,90</strong></p>
+            <a href="#" class="btn_buy">Comprar</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="media-custom">
+          <a href="#">
+            <img
+              src="./assets/imagens/oferta04.jpg"
+              alt="Cadeira Gamer"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body">
+            <p class="ofertas_text">
+              Cadeira Gamer <strong>R$ 1.590,90</strong>
+            </p>
+            <a href="#" class="btn_buy">Comprar</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="media-custom">
+          <a href="#">
+            <img
+              src="./assets/imagens/oferta05.jpg"
+              alt="Jogo FIFA 21"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body">
+            <p class="ofertas_text">Jogo FIFA 21 <strong>R$ 250,00</strong></p>
+            <a href="#" class="btn_buy">Comprar</a>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<!-- Seção de Produtos Recomendados -->
+<section class="products_background">
+  <div class="container_grid">
+    <h2>Recomendados</h2>
+    <owl-carousel-o [options]="customOptions2">
+      <ng-template carouselSlide>
+        <div class="media-custom-2">
+          <a href="#">
+            <img
+              src="./assets/imagens/recomendado01.jpg"
+              alt="Imagem de uma mão segurando um Smartphone"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body-2">
+            <a href="#" class="recomend_text">Os melhores smatphones</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="media-custom-2">
+          <a href="#">
+            <img
+              src="./assets/imagens/recomendado02.jpg"
+              alt="Imagem de mesa de escritório com notebook, desktop e tablet"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body-2">
+            <a href="#" class="recomend_text">Tudo para seu home office</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="media-custom-2">
+          <a href="#">
+            <img
+              src="./assets/imagens/recomendado03.png"
+              alt="Imagem de mesa com duas telas de computador e uma cadeira gamer"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body-2">
+            <a href="#" class="recomend_text">Monte seu PC Gamer</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="media-custom-2">
+          <a href="#">
+            <img
+              src="./assets/imagens/recomendado04.png"
+              alt="Imagem de crianças jogando videogame"
+              class="img-fluid"
+              style="color: white"
+            />
+          </a>
+          <div class="media-body-2">
+            <a href="#" class="recomend_text">As últimas novidades em games</a>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+    <br />
+    <br />
+  </div>
+</section>
+
+<!-- Seção de Notícias -->
+<section class="products_background">
+  <div class="container_grid">
+    <h2>Notícias do mundo gamer</h2>
+    <div class="noticias">
+      <div *ngFor="let noticia of listaNoticias" class="card">
+        <img
+          src="./assets/imagens/oferta01.jpg"
+          alt="img-galeria"
+          style="color: white"
+        />
+        <h3>{{ noticia.titulo }}</h3>
+        <p>{{ noticia.descricao }}</p>
+      </div>
+
+      <!-- <div class="card">
+        <img
+          src="./assets/imagens/oferta01.jpg"
+          alt="img-galeria"
+          style="color: white"
+        />
+        <h3>Notícia 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          molestie laoreet lorem sit amet vehicula.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="./assets/imagens/oferta01.jpg"
+          alt="img-galeria"
+          style="color: white"
+        />
+        <h3>Notícia 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          molestie laoreet lorem sit amet vehicula.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="./assets/imagens/oferta01.jpg"
+          alt="img-galeria"
+          style="color: white"
+        />
+        <h3>Notícia 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          molestie laoreet lorem sit amet vehicula.
+        </p>
+      </div> -->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_grid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.position {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Banner */
+
+.banner {
+  background-image: url(../../../assets/imagens/ImgBanner.png);
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#banner_text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 801px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* Barra de Ícones */
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+
+.icons_background {
+  background-color: #d0d1d1;
+  height: 178px;
+}
+
+.icon_text_section {
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: 000000;
+  text-align: center;
+}
+
+/* Section Ofertas */
+
+.products_background {
+  background-color: #181d24;
+  height: 100%;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  padding: 60px 0;
+}
+
+.ofertas_text {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 15px;
+  text-align: center;
+}
+
+.btn_buy {
+  background-color: #00f800;
+  color: #000000;
+  font: bold 1.75rem "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  width: 220px;
+  display: block;
+  margin: 20px auto;
+}
+
+/*Ofertas Carousel*/
+.media-custom a:hover {
+  color: #ffffff;
+}
+
+.media-custom img {
+  height: 300px;
+  object-fit: cover;
+  -webkit-transition: 3s all ease;
+  -o-transition: 3s all ease;
+  transition: 3s all ease;
+}
+
+.media-custom:focus,
+.media-custom:hover {
+  top: -2px;
+  -webkit-box-shadow: 0 2px 40px 0 rgba(0, 0, 0.2);
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0.2);
+}
+
+.media-custom:focus img,
+.media-custom:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.media-custom {
+  padding: 30px;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* Seção Recomendados */
+
+.recomend_text {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 15px 0px;
+}
+
+/*Recomendados Carousel*/
+.media-custom-2 img {
+  height: 420px;
+  object-fit: cover;
+  -webkit-transition: 3s all ease;
+  -o-transition: 3s all ease;
+  transition: 3s all ease;
+}
+
+.media-custom-2:focus img,
+.media-custom-2:hover img {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.media-body-2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.media-body-2 {
+  padding: 20px 0 30px 15px;
+}
+
+/*Seção Notícias*/
+
+.noticias {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding-bottom: 50px;
+}
+
+.card h3 {
+  color: #000000;
+  font: 700 1.75rem "Montserrat", sans-serif;
+  padding: 15px;
+  text-align: center;
+}
+.card p {
+  color: #000000;
+  font: 500 1.3rem "Montserrat", sans-serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card {
+  background-color: #d0d1d1;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+  /* Banner  */
+  #banner_text {
+    height: 350px;
+    font-size: 3rem;
+  }
+
+  /*Barra de Ícones*/
+  .icons_background {
+    height: 120px;
+  }
+
+  .icon_text_section {
+    font: 500 1rem "Montserrat", sans-serif;
+  }
+
+  .atendimento,
+  .qualidade,
+  .entrega,
+  /*Newsletter e Rodapé*/
+  .newsletter,
+  .local,
+  .facebook,
+  .instagram,
+  .twitter {
+    height: 40px;
+    width: 40px;
+  }
+
+  /*Seção Notícias*/
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Banner  */
+  #banner_text {
+    height: 210px;
+    font-size: 2rem;
+  }
+
+  /*Section Produtos Recomendados*/
+
+  .js-carousel-2 {
+    padding-bottom: 30px;
+  }
+
+  /*Barra de Ícones*/
+  .icons_background {
+    display: none;
+  }
+
+  /* Section Ofertas e Produtos Recomendados */
+  h2 {
+    font-size: 1.8rem;
+    padding: 40px 0px;
+  }
+
+  .ofertas_text,
+  .recomend_text {
+    font-size: 1.5rem;
+  }
+
+  .btn_buy {
+    font-size: 1.5rem;
+    width: 180px;
+  }
+
+  /*Seção Notícias*/
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}

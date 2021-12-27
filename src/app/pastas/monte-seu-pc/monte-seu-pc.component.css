@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_grid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.position {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Monte seu Pc */
+
+.products_background {
+  background-color: #181d24;
+  height: 100%;
+}
+
+.monte_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+
+.monte_text p {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.monte_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.monte_box {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.monte_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monte_form {
+  display: flex;
+  justify-content: right;
+  background-color: #d0d1d1;
+  padding: 10px;
+}
+
+#nome_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#nome {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #000000;
+  padding: 5px;
+  margin: 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+}
+
+#email_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#email {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #000000;
+  padding: 5px;
+  margin: 10px 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+}
+#fone_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#fone {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #000000;
+  padding: 5px;
+  margin: 10px 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+}
+#comentario_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#comentario {
+  padding: 5px;
+  margin: 10px 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+  height: 70px;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px 110px;
+  background: linear-gradient(90deg, #00f800, #ffffff);
+  box-shadow: 0 10px 10px #181d24;
+  font: 700 1.25rem "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+  .monte_text {
+    padding-top: 100px;
+  }
+
+  .monte_text p {
+    font-size: 1.5rem;
+  }
+
+  .monte_text h1 {
+    font-size: 3rem;
+  }
+
+  .monte_box {
+    background-image: url(../../../assets/imagens/sala_gamer.jpg);
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .monte_form {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .monte_img {
+    display: none;
+  }
+
+  #nome_form,
+  #email_form,
+  #fone_form,
+  #comentario_form {
+    font-size: 1.5rem;
+  }
+
+  #nome,
+  #email,
+  #fone,
+  #comentario {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #submit {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .monte_text {
+    padding-top: 50px;
+  }
+
+  .monte_text p {
+    font-size: 1.3rem;
+  }
+
+  .monte_text h1 {
+    font-size: 2.7rem;
+  }
+
+  .monte_form {
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .monte_img {
+    display: none;
+  }
+
+  #nome_form,
+  #email_form,
+  #fone_form,
+  #comentario_form {
+    font-size: 1.3rem;
+  }
+
+  #nome,
+  #email,
+  #fone,
+  #comentario {
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+  }
+
+  #submit {
+    width: 100px;
+  }
+}

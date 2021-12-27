@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_grid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.products_background {
+  background-color: #181d24;
+  height: 100%;
+}
+
+.sobre_text {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.link {
+  color: #000000;
+}
+
+.sobre_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+.sobre_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sobre_box {
+  background-color: #d0d1d1;
+  margin: 10px;
+  padding: 10px;
+  flex-basis: 100%;
+}
+
+.sobre_box p {
+  color: #000000;
+  font: 500 1.5rem "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.sobre_box h3 {
+  color: #000000;
+  text-align: center;
+  font: 700 2.5rem "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#nome,
+#email,
+#senha {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+.nome_box,
+.email_box,
+.senha_box {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #000000;
+  padding: 5px;
+  margin: 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+}
+
+.submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px 110px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #00f800, #ffffff);
+  box-shadow: 0 10px 10px #181d24;
+  font: 700 1.25rem "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+  .sobre_text {
+    margin-top: 100px;
+  }
+
+  .sobre_text p,
+  .sobre_box p {
+    font-size: 1.5rem;
+  }
+
+  .sobre_text h1 {
+    font-size: 3rem;
+  }
+
+  .sobre_box h3 {
+    font-size: 1.6rem;
+  }
+
+  #nome,
+  #email,
+  #senha {
+    font-size: 1.5rem;
+  }
+  #nome_box,
+  #email_box,
+  #senha_box {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sobre_text {
+    margin-top: 50px;
+  }
+
+  .sobre_text p,
+  .sobre_box p {
+    font-size: 1.3rem;
+  }
+
+  .sobre_text h1 {
+    font-size: 2.7rem;
+  }
+
+  .sobre_box h3 {
+    font-size: 1.6rem;
+  }
+
+  .sobre_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nome,
+  #email,
+  #senha {
+    font-size: 1.3rem;
+  }
+
+  #nome_box,
+  #email_box,
+  #senha_box {
+    font-size: 1rem;
+    width: 80%;
+  }
+}

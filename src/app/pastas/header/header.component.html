@@ -1,0 +1,97 @@
+<header>
+  <div class="container_grid position">
+    <a href="index.html"
+      ><img
+        class="logo"
+        src="./assets/imagens/Logo.svg"
+        alt="Logo do site Game Mania"
+        width="307"
+        height="144"
+    /></a>
+    <form id="searchbar">
+      <input
+        type="text"
+        id="searchbar_text"
+        placeholder="O que você procura?"
+      />
+      <img
+        class="search"
+        src="./assets/imagens/icon_pesquisar.svg"
+        alt="Buscar"
+        width="40"
+        height="40"
+      />
+    </form>
+    <div>
+      <a href="#"
+        ><img
+          class="cart"
+          src="./assets/imagens/icon_cart.svg"
+          alt="Carrinho"
+          width="64"
+          height="64"
+      /></a>
+      <p class="icon_text_header" href="#">Carrinho</p>
+    </div>
+
+    <!-- Barra de Menus Responsivo -->
+    <div class="btn-group" dropdown>
+      <button
+        id="button-basic"
+        dropdownToggle
+        type="button"
+        class="btn dropdown-toggle"
+        aria-controls="dropdown-basic"
+      >
+        Menu<span class="caret"></span>
+      </button>
+      <ul
+        id="dropdown-basic"
+        *dropdownMenu
+        class="dropdown-menu"
+        role="menu"
+        aria-labelledby="button-basic"
+      >
+        <li role="menuitem"><a class="dropdown-item" routerLink="">Home</a></li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="#">Departamentos</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="monteSeuPc">Monte seu Pc</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="galeria">Galeria</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="sobre">Sobre</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <a routerLink="login"
+        ><img
+          class="login"
+          src="./assets/imagens/icon_login.svg"
+          alt="Login"
+          width="64"
+          height="64"
+      /></a>
+      <p class="icon_text_header">Login</p>
+    </div>
+  </div>
+
+  <!-- Barra de Menus -->
+  <div class="menu_background">
+    <nav id="menu" class="menu container_grid position_menu">
+      <a routerLink="">Home</a>
+      <a routerLink="">Departamentos</a>
+      <a routerLink="monteSeuPc">Monte seu PC</a>
+      <a routerLink="galeria">Galeria</a>
+      <a routerLink="sobre">Sobre</a>
+      <a routerLink="contato">Contato</a>
+    </nav>
+  </div>
+</header>

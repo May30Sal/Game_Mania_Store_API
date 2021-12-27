@@ -1,0 +1,100 @@
+<!-- Seção Newsletter -->
+<section class="newsletter_background">
+  <div class="container">
+    <div class="row">
+      <h3 class="col news_text">Assine nossa newsletter!</h3>
+      <form
+        #userForm="ngForm"
+        (ngSubmit)="onSubmit()"
+        class="col newsletter_box"
+      >
+        <input
+          type="email"
+          id="email_newsletter"
+          placeholder="Seu e-mail aqui"
+          name="email"
+          [(ngModel)]="userModel.email"
+        />
+        <button type="submit" id="btn_newsletter">
+          <img class="newsletter" src="./assets/imagens/icon_newsletter.svg" />
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <!-- Links do Rodapé -->
+  <div class="footer_gray_background">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav class="footer_menu">
+            <h3>Institucional</h3>
+            <a routerLink="sobre">Quem Somos</a>
+            <a routerLink="#">Pagamentos</a>
+            <a routerLink="#">Depoimentos de Clientes</a>
+            <a routerLink="#">Departamentos</a>
+            <a routerLink="contato">Contato</a>
+          </nav>
+        </div>
+        <div class="col">
+          <div class="footer_atendimento">
+            <h3>Atendimento</h3>
+            <a href="#"
+              ><img
+                class="local"
+                src="./assets/imagens/icon_local.svg"
+                alt="Ícone Local"
+                width="48"
+                height="48"
+            /></a>
+            <p class="atendimento_text">
+              Avenida Lorem Ipsum, n. 10, Centro, São Paulo-SP Fone (11)
+              0000-0000
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <nav class="footer_icons">
+            <a href="#"
+              ><img
+                class="facebook"
+                src="./assets/imagens/icon_face.svg"
+                alt="Ícone Facebook"
+                width="64"
+                height="64"
+            /></a>
+            <a href="#"
+              ><img
+                class="instagram"
+                src="./assets/imagens/icon_insta.svg"
+                alt="Ícone Instagram"
+                width="64"
+                height="64"
+            /></a>
+            <a href="#"
+              ><img
+                class="twitter"
+                src="./assets/imagens/icon_twitter.svg"
+                alt="Ícone Twitter"
+                width="64"
+                height="64"
+            /></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright - Rodapé -->
+  <div class="footer_black_background">
+    <div class="container">
+      <p class="footer_text">
+        Game Mania Informática e Games Ltda. CNPJ: 00.000.000/0001 | São Paulo -
+        SP
+      </p>
+      <br />
+    </div>
+  </div>
+</footer>

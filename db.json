@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "email": "teste@teste.com",
+      "password": "$2a$10$MeOr3ZdiJtRFHGiPyLlXRedaAI64FK0DzT2cIJs3.Lhyh3xK/54nO",
+      "id": 1
+    }
+  ],
+  "noticias": [
+    {
+      "titulo": "Primeira Notícia",
+      "descricao": "Cupcake ipsum dolor sit amet brownie.",
+      "id": "1"
+    },
+    {
+      "titulo": "Segunda Notícia",
+      "descricao": "Danish muffin lollipop bear claw pudding bear claw wafer.",
+      "id": "2"
+    },
+    {
+      "titulo": "Terceira Notícia",
+      "descricao": "Oat cake tiramisu ice cream candy tiramisu halvah dragée.",
+      "id": "3"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Mayara"
+    },
+    {
+      "nome": "Paulo",
+      "id": 2
+    },
+    {
+      "nome": "Maria",
+      "id": 3
+    }
+  ]
+}

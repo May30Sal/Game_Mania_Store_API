@@ -1,0 +1,152 @@
+/* Seção Newsletter */
+.newsletter_background {
+  background-color: #00f800;
+  height: 100%;
+}
+
+.news_text {
+  color: #000000;
+  font: bold 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.newsletter_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#email_newsletter {
+  background-color: #d0d1d1;
+  height: 68px;
+  width: 70%;
+  font: 500 1.6rem "Montserrat", sans-serif;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+.footer_gray_background {
+  background-color: #d0d1d1;
+  height: 100%;
+  padding: 10px;
+}
+
+footer h3 {
+  color: #000000;
+  font: bold 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #000000;
+  font: 500 1.6rem "Montserrat", sans-serif;
+  padding: 5px;
+}
+
+.footer_menu a:hover {
+  color: #00f800;
+  background-color: #0b0b0c;
+}
+
+.footer_atendimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.atendimento_text {
+  color: #000000;
+  font: 500 1.6rem "Montserrat", sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer_black_background {
+  background-color: #0b0b0c;
+}
+
+.footer_text {
+  font: 500 1.6rem "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .news_text {
+    font: bold 1.3rem "Montserrat", sans-serif;
+  }
+
+  #email_newsletter {
+    height: 40px;
+    width: 70%;
+    font: 500 1rem "Montserrat", sans-serif;
+  }
+
+  /* Rodapé */
+  footer h3 {
+    font-size: 1.1rem;
+  }
+
+  footer nav a,
+  .atendimento_text,
+  .footer_text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news_text {
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+
+  #email_newsletter {
+    height: 30px;
+    width: 200px;
+    font-size: 1rem;
+  }
+
+  .newsletter,
+  .local,
+  .facebook,
+  .instagram,
+  .twitter {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* Rodapé */
+  footer h3 {
+    font-size: 1.1rem;
+  }
+
+  footer nav a,
+  .atendimento_text,
+  .footer_text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,58 @@
+/* Galeria */
+
+.products_background {
+  background-color: #181d24;
+  height: 100%;
+}
+
+.galeria_text {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.galeria_text p {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 15px;
+}
+
+.galeria_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+.galeria_images {
+  margin-bottom: 30px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+  .galeria_text {
+    margin-top: 100px;
+  }
+
+  .galeria_text p {
+    font-size: 1.5rem;
+  }
+
+  .galeria_text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .galeria_text {
+    margin-top: 50px;
+  }
+
+  .galeria_text p {
+    font-size: 1.3rem;
+  }
+
+  .galeria_text h1 {
+    font-size: 2.7rem;
+  }
+}

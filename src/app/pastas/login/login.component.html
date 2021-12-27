@@ -1,0 +1,83 @@
+<section class="products_background">
+  <div class="container_grid">
+    <div class="row">
+      <div class="col-12">
+        <div class="sobre_text">
+          <h1>Login do Cliente</h1>
+        </div>
+      </div>
+    </div>
+    <div class="sobre_container">
+      <div class="sobre_box">
+        <h3>Faça seu Login!</h3>
+        <div class="form">
+          <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+            <div>
+              <label id="email" for="email">E-mail:</label><br />
+              <input
+                class="email_box"
+                type="email"
+                placeholder="Seu email aqui"
+                [(ngModel)]="loginModel.email"
+                name="email"
+              />
+            </div>
+            <div>
+              <label id="senha" for="senha">Senha:</label><br />
+              <input
+                class="senha_box"
+                type="password"
+                placeholder="Sua senha aqui"
+                [(ngModel)]="loginModel.password"
+                name="senha"
+              />
+            </div>
+            <button id="submit" class="submit" type="submit">Continuar</button>
+          </form>
+          <p class="msg" *ngIf="mensagem != ''">{{ mensagem }}</p>
+        </div>
+        <p>
+          Ao continuar com o acesso, você concorda com a nossa
+          <a class="link" routerLink="#">Política de Privacidade</a>
+        </p>
+      </div>
+      <div class="sobre_box">
+        <h3>Cadastre-se!</h3>
+        <div class="form">
+          <form #cadastroForm="ngForm">
+            <div>
+              <label id="nome" for="nome">Nome Completo:</label><br />
+              <input
+                class="nome_box"
+                type="text"
+                placeholder="Digite seu nome"
+                name="nome"
+              />
+            </div>
+            <div>
+              <label id="email" for="email">E-mail:</label><br />
+              <input
+                class="email_box"
+                type="email"
+                placeholder="Digite seu email"
+                name="email"
+              />
+            </div>
+            <div>
+              <label id="senha" for="senha">Senha:</label><br />
+              <input
+                class="senha_box"
+                type="password"
+                placeholder="Digite sua senha"
+                name="senha"
+              />
+            </div>
+            <button id="submitCad" class="submit" type="submit">
+              Cadastrar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

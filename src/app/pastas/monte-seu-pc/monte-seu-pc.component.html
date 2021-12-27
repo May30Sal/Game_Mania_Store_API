@@ -1,0 +1,71 @@
+<section class="products_background">
+  <div class="monte_text container_grid">
+    <h1>Monte seu Computador Gamer</h1>
+    <p>
+      Damos todo o suporte e dicas necessárias para a montagem do seu Pc,
+      efetuando a melhor montagem com os melhores produtos, de acordo com sua
+      necessidade. Quer saber mais? Entre em contato e monte seu PC Gamer
+      conosco!!!
+    </p>
+  </div>
+  <div class="container_grid monte_box">
+    <div class="monte_img">
+      <img
+        src="./assets/imagens/sala_gamer.jpg"
+        alt="Imagem de uma mesa de escritório com computadores"
+        width="667"
+        height="363"
+        style="color: white"
+      />
+    </div>
+    <div class="monte_form">
+      <form id="form" #monteForm="ngForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label id="nome_form" for="nome">Nome:</label><br />
+          <input
+            id="nome"
+            type="text"
+            placeholder="Digite seu nome"
+            name="nome"
+            [(ngModel)]="monteSeuPcModel.nome"
+          />
+        </div>
+        <div>
+          <label id="email_form" for="email">E-mail:</label><br />
+          <input
+            id="email"
+            type="email"
+            placeholder="Digite seu email:"
+            name="email"
+            [(ngModel)]="monteSeuPcModel.email"
+          />
+        </div>
+        <div>
+          <label id="fone_form" for="fone">Telefone:</label><br />
+          <input
+            id="fone"
+            type="tel"
+            placeholder="Digite seu telefone"
+            name="fone"
+            required
+            tel="num"
+            [(ngModel)]="monteSeuPcModel.fone"
+          />
+        </div>
+        <div>
+          <label id="comentario_form" for="comentario"
+            >Digite sua mensagem:</label
+          ><br />
+          <textarea
+            id="comentario"
+            name="comentario"
+            required
+            comentario="comentario"
+            [(ngModel)]="monteSeuPcModel.comentario"
+          ></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
